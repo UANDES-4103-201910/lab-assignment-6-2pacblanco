@@ -4,7 +4,7 @@ class RegistrationsController < ApplicationController
 	end
 
 	def create
-	    #done
+	    #complete this method
 		@user = User.create(user_params)
 		if @user.save
 			redirect_to "/" , notice: 'Registro exitoso!'
